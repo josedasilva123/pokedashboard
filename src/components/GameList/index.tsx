@@ -1,19 +1,25 @@
-import React from 'react'
-import { gameData } from '../../data/database'
-import GameCard from './GameCard'
-import { StyledGameList } from './style';
+import React from "react";
+import { gameData } from "../../data/database";
+import { StyledTitle } from "../../styles/typography";
+import GameCard from "./GameCard";
+import GameListHeader from "./GameListHeader";
+import { StyledGameList } from "./style";
 
 const GameList = () => {
   const newGameData = [...gameData];
   newGameData.length = 3;
 
   return (
-    <StyledGameList>
-        {newGameData.map(game => (
-            <GameCard game={game} />
+    <>
+      <GameListHeader />
+      <StyledGameList>
+       
+        {newGameData.map((game) => (
+          <GameCard game={game} />
         ))}
-    </StyledGameList>    
-  )
-}
+      </StyledGameList>
+    </>
+  );
+};
 
-export default GameList
+export default GameList;
