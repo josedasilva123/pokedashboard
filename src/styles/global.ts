@@ -22,6 +22,9 @@ export const GlobalStyle = createGlobalStyle`
     li{
         list-style: 0;
     }
+    img{
+        max-width: 100%;
+    }
 `
 export const ColorsTheme = {
     colors: {
