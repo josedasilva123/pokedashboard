@@ -10,15 +10,14 @@ const GameList = () => {
   newGameData.length = 3;
 
   return (
-    <>
+    <section>
       <GameListHeader />
-      <StyledGameList>
-       
+      <StyledGameList>       
         {newGameData.map((game) => (
           <GameCard game={game} />
         ))}
       </StyledGameList>
-    </>
+    </section>
   );
 };
 

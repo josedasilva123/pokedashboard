@@ -11,10 +11,10 @@ const GameCard = ({game}: iGameCardProps) => {
   return (
     <StyledGameCard>
         <img src={game.image} alt={game.name} />
-        <StyledTitle tag="h3" fontSize="sm" fontWeight={700}>
+        <StyledTitle tag="h3" fontSize="md" fontWeight={700}>
             {game.name}
         </StyledTitle>
-        <StyledParagraph fontSize="md">
+        <StyledParagraph fontSize="lg">
             {game.category}
         </StyledParagraph>
     </StyledGameCard>   
