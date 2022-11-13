@@ -12,10 +12,9 @@ const GameList = () => {
   return (
     <>
       <GameListHeader />
-      <StyledGameList>
-       
+      <StyledGameList>       
         {newGameData.map((game) => (
-          <GameCard game={game} />
+          <GameCard key={game.name} game={game} />
         ))}
       </StyledGameList>
     </>

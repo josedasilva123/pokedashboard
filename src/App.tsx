@@ -2,6 +2,7 @@ import React from 'react';
 import GameList from './components/GameList';
 import Header from './components/Header';
 import MainBanner from './components/MainBanner';
+import MyGames from './components/MyGames';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <MainBanner />   
       <GameList />
+      <MyGames />
     </div>
   );
 }
